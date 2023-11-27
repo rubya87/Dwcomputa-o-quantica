@@ -100,16 +100,22 @@
 
         @media (max-width: 480px){
             h1 {
-                font-size: 26px;
+                font-size: 25px;
             }
             h2 {
-                font-size: 20px;    
+                font-size: 18px;    
             }
             p {
-                font-size: 14px;
+                font-size: 13.5px;
             }
+
             #voltar {
-                width: 55%;
+                width: 60%;
+            }
+
+            .faq-container{
+                width: 75%;
+                padding: 5px 20px;
             }
         }
     </style>
@@ -139,8 +145,7 @@
                     Desigualdade Tecnológica: Buscar estratégias para garantir equidade no acesso e benefícios da computação quântica.
                     Segurança Nacional e Militar: O uso militar da computação quântica apresenta riscos éticos relacionados à segurança global.
                     Impacto no Emprego e Desigualdade Social: A automação pela computação quântica pode impactar empregos e contribuir para desigualdades sociais.
-                    Viés Algorítmico e Discriminação: O desenvolvimento de algoritmos quânticos pode introduzir vieses discriminatórios.
-                    Esses desafios ressaltam a necessidade de uma abordagem ética e responsável no desenvolvimento da computação quântica.</p>
+                    Viés Algorítmico e Discriminação: O desenvolvimento de algoritmos quânticos pode introduzir vieses discriminatórios.</p>
             </div>
         </div>
         <div id="resp3" class="faq-container" onclick="toggleResposta('resp3')">
@@ -202,9 +207,9 @@
     <script>
         function toggleResposta(containerId) {
             let container = document.getElementById(containerId);
-            let p = container.querySelector('div > p');
+            let p = container.querySelector('.resposta > p'); // Correção aqui
             let button = container.querySelector('button');
-
+        
             if (p.style.maxHeight === '0px' || p.style.maxHeight === '') {
                 p.style.maxHeight = '500px';
                 p.style.paddingTop = '8px';
@@ -218,7 +223,7 @@
                 p.style.paddingBottom = '0px';
                 p.style.visibility = 'hidden';
                 button.innerHTML = '&#8744;';
-
+        
                 setTimeout(() => {
                     p.style.transition = 'max-height 1s ease, padding-bottom 1s ease, visibility 1s ease';
                 }, 500);
