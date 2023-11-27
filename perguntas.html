@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas frequentes</title>
+    <link rel="icon" href="imagens/icone.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FCF5E5;
+        }
+        h1, h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-right: 15px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 35px;
+            margin: 20px auto;
+        }
+        h2{
+            font-size: 24px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #011638ff;
+            padding: 12px;
+            margin-bottom: 40px;
+        }
+        p {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            font-size: 18px;
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease, padding-bottom 1s ease, visibility 1s ease;
+            visibility: hidden;
+        }
+
+        .faq-container { 
+            border: 3px dashed #011638ff;
+            border-spacing: 10px;
+            padding: 5px 30px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .pergunta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div button {
+            background-color: transparent;
+            border-radius: 10px;
+            border-color: #011638ff;
+            font-size: 30px;
+            margin: auto 0;
+            padding: 2px 8px;
+            height: 45px;
+            width: 45px;
+            color: #011638ff;
+            cursor: pointer;
+        }
+
+        div button:hover {
+            color: white;
+            background-color: #011638ff;
+        }
+        header a {
+            margin-left: 15px;
+        }
+
+        #voltar {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #011638ff;
+            color: white;
+            padding: 20px 25px;
+            margin: 45px auto 30px;
+            display: block;
+            width: 16%;
+            border-radius: 10px;
+        }
+        #voltar:hover {
+            background-color: rgb(0, 57, 148);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="imagens/computacao.png" alt="Símbolo da computação quântica" height="80px" width="80px"></a>
+        <h1>Perguntas frequentes sobre a computação quântica</h1>
+    </header>
+    <main>
+        <div id="resp1" class="faq-container" onclick="toggleResposta('resp1')">
+            <div class="pergunta">
+                <h2>1. Como podemos garantir a segurança da comunicação quântica em redes quânticas?</h2>
+                <button>&#8744;</button>
+            </div>
+            <div class="resposta">
+                <p>Para garantir a segurança da comunicação quântica em redes quânticas, utiliza-se criptografia quântica de chave quântica (QKD) para distribuição segura de chaves, realizam-se testes de emaranhamento para detectar interferências, mantêm-se a troca de chaves em ambientes seguros, aplicam-se medidas contra ataques com fotões únicos, exploram-se qubits topológicos para robustez e estabelecem-se padrões de segurança para infraestrutura física e algoritmos. A pesquisa contínua em segurança quântica é fundamental.</p>
+            </div>
+        </div>
+        <div id="resp2" class="faq-container" onclick="toggleResposta('resp2')">
+            <div class="pergunta">
+                <h2>2. Quais são os desafios éticos associados ao desenvolvimento da computação quântica?</h2>
+                <button>&#8744;</button>
+            </div>
+            <div class="resposta">
+                <p>Privacidade e Segurança - A capacidade de quebrar algoritmos criptográficos existentes levanta preocupações sobre a privacidade e segurança dos dados
+                    Desigualdade Tecnológica: Buscar estratégias para garantir equidade no acesso e benefícios da computação quântica.
+                    Segurança Nacional e Militar: O uso militar da computação quântica apresenta riscos éticos relacionados à segurança global.
+                    Impacto no Emprego e Desigualdade Social: A automação pela computação quântica pode impactar empregos e contribuir para desigualdades sociais.
+                    Viés Algorítmico e Discriminação: O desenvolvimento de algoritmos quânticos pode introduzir vieses discriminatórios.
+                    Esses desafios ressaltam a necessidade de uma abordagem ética e responsável no desenvolvimento da computação quântica, assegurando que seus benefícios sejam equitativamente distribuídos e que seus impactos negativos sejam minimizados.</p>
+            </div>
+        </div>
+        <div id="resp3" class="faq-container" onclick="toggleResposta('resp3')">
+            <div class="pergunta">
+                <h2>3. Como a computação quântica pode contribuir para a compreensão de fenômenos físicos fundamentais?</h2>
+                <button>&#8744;</button>
+            </div>
+            <div class="resposta">
+                <p>A computação quântica pode contribuir para a compreensão de fenômenos físicos fundamentais ao permitir simulações mais precisas e eficientes de sistemas quânticos complexos. Isso inclui a capacidade de explorar fenômenos como o emaranhamento quântico, comportamento de partículas em potenciais complexos e propriedades de materiais em níveis atômicos, proporcionando insights mais profundos e acelerando a pesquisa em física fundamental</p>
+            </div>
+        </div>
+        <div id="resp4" class="faq-container" onclick="toggleResposta('resp4')">
+            <div class="pergunta">
+                <h2>4. Quais são os avanços mais recentes na pesquisa de algoritmos quânticos?</h2>
+                <button>&#8744;</button>
+            </div>
+            <div class="resposta">
+                <p>Os avanços mais recentes na pesquisa de algoritmos quânticos incluem desenvolvimentos em algoritmos de machine learning quântico, otimização quântica, e aprimoramentos em algoritmos existentes, como o algoritmo de Grover e algoritmos de fatoração. Pesquisadores também estão explorando algoritmos quânticos específicos para problemas práticos em diversas áreas, como química quântica e inteligência artificial.</p>
+            </div>
+        </div>
+        <div id="resp5" class="faq-container" onclick="toggleResposta('resp5')">
+            <div class="pergunta">
+                <h2>5. Como os sistemas híbridos, combinando computação quântica e clássica, podem ser efetivamente utilizados?</h2>
+                <button>&#8744;</button>
+            </div>
+            <div class="resposta">
+                <p>Sistemas híbridos que combinam computação quântica e clássica podem ser efetivamente utilizados ao delegar tarefas específicas a cada paradigma, aproveitando as capacidades de processamento clássico para controle e gerenciamento, enquanto a computação quântica é aplicada a tarefas específicas, como simulações quânticas ou otimizações, onde oferece vantagens significativas. Essa abordagem maximiza a eficiência computacional ao capitalizar as forças de ambas as modalidades.</p>
+            </div>
+        </div>
+        <div id="resp6" class="faq-container" onclick="toggleResposta('resp6')">
+            <div class="pergunta">
+                <h2>6. Quais são os desafios na criação de software quântico robusto e escalável? </h2>
+                <button>&#8744;</button>
+            </div>
+            <div class="resposta">
+                <p>Os desafios na criação de software quântico robusto e escalável incluem superar erros quânticos, a complexidade do desenvolvimento, garantir sincronização com hardware em evolução, enfrentar desafios de escalabilidade, desenvolver linguagens de programação eficientes, criar compiladores e otimizadores eficazes, fornecer ferramentas de simulação e depuração sólidas, e buscar padrões de padronização na indústria. Esses desafios refletem a necessidade de abordagens inovadoras para explorar o potencial completo da computação quântica.</p>
+            </div>
+        </div>
+        <div id="resp7" class="faq-container" onclick="toggleResposta('resp7')">
+            <div class="pergunta">
+                <h2>7. Quais são os desafios na criação de software quântico robusto e escalável? </h2>
+                <button>&#8744;</button>
+            </div>
+            <div class="resposta">
+                <p>Métodos eficazes de detecção e correção de erros na computação quântica incluem códigos de correção de erros, como códigos cat e códigos topológicos, emaranhamento repetido, teorema do código do limite superior, algoritmos de correção de paridade e o uso de feedback quântico. Essas abordagens buscam minimizar os efeitos adversos de erros quânticos, crucial para a construção de sistemas quânticos robustos.</p>
+            </div>
+        </div>
+        <div id="resp8" class="faq-container" onclick="toggleResposta('resp8')">
+            <div class="pergunta">
+                <h2>8. Quais são os fatores-chave na criação de uma infraestrutura global de comunicação quântica segura?</h2>
+                <button>&#8744;</button>
+            </div>
+            <div class="resposta">
+                <p>Os fatores-chave para criar uma infraestrutura global de comunicação quântica segura incluem a implementação de criptografia quântica de chave quântica (QKD), o estabelecimento de redes quânticas, o desenvolvimento de hardware confiável, a definição de padrões globais, a adoção de protocolos de segurança, o desenvolvimento de software seguro, a educação sobre segurança quântica, a realização de testes de segurança contínuos e a proteção contra ataques quânticos. Esses elementos combinados garantem uma comunicação quântica segura em escala global.</p>
+            </div>
+        </div>
+        <a id="voltar" href="index.html">Voltar à página inicial</a>
+    </main>
+    <script>
+        function toggleResposta(containerId) {
+            let container = document.getElementById(containerId);
+            let p = container.querySelector('div > p');
+            let button = container.querySelector('button');
+
+            if (p.style.maxHeight === '0px' || p.style.maxHeight === '') {
+                p.style.maxHeight = '500px';
+                p.style.paddingTop = '8px';
+                p.style.paddingBottom = '20px';
+                p.style.visibility = 'visible';
+                button.innerHTML = 'x';
+                button.style.paddingBottom = '22px';
+            } else {
+                p.style.transition = 'max-height 0.3s ease, padding-bottom 0.3s ease, visibility 0.3s ease';
+                p.style.maxHeight = '0px';
+                p.style.paddingBottom = '0px';
+                p.style.visibility = 'hidden';
+                button.innerHTML = '&#8744;';
+
+                setTimeout(() => {
+                    p.style.transition = 'max-height 1s ease, padding-bottom 1s ease, visibility 1s ease';
+                }, 500);
+            }
+        }
+    </script>
+</body>
+</html>
