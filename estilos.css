@@ -16,8 +16,6 @@ h2 {
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 26px;
-    /* border-bottom: 2px solid #333;
-    padding-bottom: 5px; */
 }
 
 h3 {
@@ -78,6 +76,11 @@ img {
     border: 3px dashed #011638ff;
     padding: 5px 30px;
     border-radius: 1rem;
+}
+
+.espacamento {
+    margin-top: 20px;
+    
 }
 
 
@@ -192,9 +195,14 @@ table {
 #tabela_comparativa {
     margin-top: 60px;
     padding-top: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     border: 3px dashed #011638ff;
     border-radius: 1rem;
+}
+
+#tabela_comparativa h2 {
+    text-align: center;
+    font-size: 28px;
 }
 
 th, tr, td {
@@ -393,6 +401,10 @@ p#chamada {
     header li{
         border-bottom: 1.5px #FCF5E5 solid;
     }
+
+    #comoingressar h1 {
+        margin: 40px 0;
+    }
 }
 
 @media (max-width: 790px) {
@@ -413,5 +425,126 @@ p#chamada {
 @media (max-width: 1200px){
     #saibamais{
         padding-top: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .botao {
+        width: 40%;
+        padding: 14px;
+        margin-top: 100px;
+        font-size: 14.5px;
+    }
+
+    #banner {
+        height: 350px;
+    }
+    
+    #saibamais{
+        padding: 15px 20px;
+    }
+
+    p#chamada {
+        text-indent: 0;
+        width: 90%;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    p {
+        text-indent: 1.5rem;
+        font-size: 14px;
+    }
+    .espacamento{
+        margin-top: 10px;
+    }
+
+    #sobreposicao img {
+        height: auto;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    button {
+        right: 15px;
+    }
+    
+    #titulo {
+        font-size: 16px;
+    }
+
+    #tabela_comparativa h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    th {
+        font-size: 10.5px;
+    }
+
+    tr,
+    td {
+        font-size: 10px;
+    }
+
+    #tabela_comparativa {
+        margin-top: 20px;
+        padding-bottom: 25px;
+        border: none;
+    }
+
+    #recursos p {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    #comoingressar h1 {
+        font-size: 26px;
+    }
+
+    #comoingressar h2, #aplicacoes h2, #desafios h2, #matematica h2 {
+        font-size: 20px;
+    }
+
+    #comoingressar ul, #aplicacoes ul, #desafios ol {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #dep1 p, #dep2 p{
+        font-size: 15px;
+    }
+
+    #dep1 h3, #dep2 h3 {
+        font-size: 16px;
+    }
+
+    #aplicacoes ul, #desafios ol {
+        line-height: 20px;
+    }
+
+    #protocolo {
+        line-height: 30px;
+    }
+
+    #aplicacoes h2{
+        margin-top: 30px;
+    }
+
+    #matematica h2 {
+        font-size: 20px !important;
+    }
+
+    #comoingressar h1{
+        margin-top: 0;
+    }
+
+    #matematica ol li {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
     }
 }
