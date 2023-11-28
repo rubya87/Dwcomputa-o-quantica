@@ -542,17 +542,17 @@ p#chamada {
         margin-top: 0;
     }
 
-    #matematica ol li {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: left;
+     #matematica ol li {
+         font-size: 14px;
+         line-height: 20px;
+         text-align: left;
     }
 
     :target {
-        scroll-margin-top: 80px;
-
+        scroll-margin-top: 100px;
+    }
     header li a {
         font-size: 14px;
-    }
-    }
+    }    
 }
+   
