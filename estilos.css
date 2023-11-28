@@ -428,7 +428,7 @@ p#chamada {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
     .botao {
         width: 40%;
         padding: 14px;
@@ -440,7 +440,7 @@ p#chamada {
         height: 350px;
     }
     
-    #saibamais{
+    #saibamais {
         padding: 15px 20px;
     }
 
@@ -472,7 +472,7 @@ p#chamada {
     }
     
     #titulo {
-        font-size: 16px;
+        font-size: 1.05rem;
     }
 
     #tabela_comparativa h2 {
@@ -546,5 +546,13 @@ p#chamada {
         font-size: 14px;
         line-height: 20px;
         text-align: left;
+    }
+
+    :target {
+        scroll-margin-top: 80px;
+
+    header li a {
+        font-size: 14px;
+    }
     }
 }
